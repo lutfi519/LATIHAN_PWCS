@@ -36,6 +36,10 @@
            color: #ffffff;
            font-size: 15px;
         }
+        .menu .menu-link{
+            display: flex;
+            justify-content: space-between;
+        }
         .menu ul li:hover{
             color: #ffffff;
             background-color: #000000;
@@ -180,9 +184,14 @@
             .menu ul{
                 display: none;
             }
-            #menu-toggle:checked + label + ul{
+            #menu-toggle:checked + label + .menu-link{
                 display: flex;
                 flex-direction: column;
                 margin-left: -5px;
+                ul{
+                display: flex;
+                flex-direction: column;
+                margin-left: -5px;
+                }
             }
         }
